@@ -1,18 +1,15 @@
 name: super-cool-app
-version: git
+version: '1.0'
 summary: Super Cool App
 description: Super Cool App that does everything!
+base: core22
 confinement: strict
-base: core18  
 grade: stable
-architectures:
-  - build-on: [ amd64 ]
-  - build-on: [ arm64 ]
 
 apps:
   super-cool-app:
     command: super_cool_app
-    extensions: [flutter-stable]
+    extensions: [gnome]
 
 parts:
   super-cool-app:
